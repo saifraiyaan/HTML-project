@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS website</title>
+    <style>
+           body{
+               margin: 0%;
+               padding: 0;
+               line-height: 1.5sem;
+                }
+           #header{
+                  background: black;
+                  font-family: Arial, Helvetica;
+                  height: 45px;
+                  }
+           #contentwrapper{
+                           float: left;
+                           width: 100%;
+                          }
+           #contentcolumn{
+                        margin: 0 230px 230px;
+                        }
+           #leftcolumn{
+                  float: left;
+                  width: 230px;
+                  margin-left: -100%;
+                  background-color: azure;
+                     }
+           #rightcolumn{
+                  float: left;
+                  width: 230px;
+                  margin-left: -230px;
+                  background : #20287a ;
+           }
+           .innertext{
+                 margin: 20%;
+                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                 color:grey
+                     }
+           #footer{
+                 clear: left;
+                 width: 100%;
+                 background: black;
+                 font-family: arial;
+                 text-align: center;
+                 padding:4px;
+                  }
+           /* ######## Navigation bar#################### */
+           ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+             }
+           li{
+             float:left;
+             border-right:1px solid #bbb;
+             }
+           li:last child{
+                border-right:none;
+                        }
+           li a { 
+             display: block;
+             color:white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+                }
+           li a:hover:not(.active)
+                {
+            background-color: #808080;
+           }
+           .active{
+            background-color: #0099ff;
+           }
+           /* ##########Responsive layout css */
+           @media (maxwidth :840px){
+               #leftcolumn{
+                     margin-left: -100%;
+               }
+           #rightcolumn
+           {
+              float: none;
+              width: 100%;
+              margin-left: 0;
+              clear:both;
+           }
+           #contentcolumn{
+              margin-right: 0;
+                         }
+       }
+       @media (maxwidth:600px){
+           #leftcolumn
+              {
+                float: none;
+                width: 100px;
+                clear:both;
+                margin-left: 0;
+              }
+            #contentcolumn
+            {
+               margin-left: 0;
+            }
+                               }
+                            
+    </style>
+</head>
+<body>
+       <div id="header">
+              <ul style="display:inline;">
+              <li><a  class="active" href="#home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+              <li><a href="#news">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+              <li><a href="#contact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> 
+              <li><a href="#about">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;</a></li>      
+              </ul>
+              </div>
+              <div id="contentwrapper">
+                     <div id="contentcolumn">
+                            <div id="innertext">
+                                   <b>Welcome</b> <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum placeat nulla perferendis at repellat quaerat beatae veniam itaque quod exercitationem. Dolorem reprehenderit quam error obcaecati veritatis laboriosam sed, expedita officia., dolor sit amet consectetur adipisicing elit. Quae, officiis vero voluptate atque maxime sequi non reprehenderit fuga fugiat placeat adipisci mollitia harum aperiam. Eum, optio minima. Consequatur, eum perspiciatis.
+
+                     </p>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A fugiat reiciendis possimus alias tempora repudiandae molestias, laudantium accusantium. Fugiat dicta deleniti officiis dignissimos eum, dolor veniam ea aliquid eligendi quidem!</p>
+                                   </div>
+                            </div>
+                     </div>
+                     <div id="leftcolumn">
+                            <div class="innertext">
+                                   <b>left</b><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aspernatur eum recusandae vitae? Nam ratione saepe neque, dolores perferendis voluptatum corrupti, consectetur pariatur, sequi quidem eligendi nihil rerum dolorum quae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, similique eius. Repellendus ratione voluptate necessitatibus dicta nihil officia neque reiciendis ipsam quisquam, nam deleniti sapiente aut quo eligendi autem animi cum quidem perferendis similique numquam optio blanditiis impedit porro? Doloremque totam quidem neque ipsam iure beatae accusantium nesciunt quia culpa!</p>
+                                   </div>
+                            </div>
+                            <div id="rightcolumn">
+                                   <div class="innertext">
+                                          <b>Right</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam id dolores nemo in consectetur! Magnam vitae, doloremque nostrum ipsum corporis officiis neque fugiat minima molestiae a cum facilis numquam tenetur eius quibusdam rerum deleniti. Cumque aliquid officia atque earum reprehenderit illo, soluta neque quasi voluptates error sequi temporibus eveniet qui.
+
+
+                                          </div>
+                                   </div>
+                                   <div id="footer"> Footer </div>
+    
+</body>
+</html>
